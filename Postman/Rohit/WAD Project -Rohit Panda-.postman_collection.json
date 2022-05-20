@@ -1,0 +1,1078 @@
+{
+	"info": {
+		"_postman_id": "18cdccf4-da2d-4949-92c0-1f86311fad9e",
+		"name": "WAD Project <Rohit Panda>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "APIs",
+			"item": [
+				{
+					"name": "Covid19 Data",
+					"item": []
+				}
+			]
+		},
+		{
+			"name": "Routes",
+			"item": [
+				{
+					"name": "Register",
+					"item": [
+						{
+							"name": "View Registered User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/viewUsers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"viewUsers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register User (Success Case)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "glennchingchong",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "glennchingchong@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "glenn123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register User (Unsuccessful)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "kb",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "KB@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "KB123",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sign In",
+					"item": [
+						{
+							"name": "View Signed In User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/viewUsers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"viewUsers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign in (Correct user cred)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "KB@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123ABC",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign in (Incorrect user cred)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "admin@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123ABC",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Log Out",
+					"item": [
+						{
+							"name": "unsuccessful Logout with invalid tokens",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "token",
+											"value": "bb831aef188d508413fcf36708d0e3eb",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/logOut?token=bb831aef188d508413fcf36708d0e3eb",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logOut"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "bb831aef188d508413fcf36708d0e3eb"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "unsuccessful Logout without tokens",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "http://localhost:3000/logOut",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logOut"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Successful Logout with valid token",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "id",
+											"value": "61f3bc1411fb3cac254f6a51",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/logOut?token=304d9356c92629533648f47fbd799e97",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"logOut"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "304d9356c92629533648f47fbd799e97"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Manage Users Roles",
+					"item": [
+						{
+							"name": "Delete User",
+							"item": [
+								{
+									"name": "unsuccessful in deleting user",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/deleteUserRole/:id",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"deleteUserRole",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "61ed4ffa70d803836cdbfff7"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "successful in deleting user",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/deleteUserRole/:id",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"deleteUserRole",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "62014f012eaa553f54651009"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Edit User Role",
+							"item": []
+						},
+						{
+							"name": "View User",
+							"item": [
+								{
+									"name": "unSuccessful in view user by id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/user/?id=62026fe30d00d04c8eb615e0",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"user",
+												""
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "62026fe30d00d04c8eb615e0"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "successful in view user by id",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "View All Users",
+							"item": [
+								{
+									"name": "New Request",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/viewUsers",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"viewUsers"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Add User",
+							"item": [
+								{
+									"name": "successfully add user",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name",
+													"value": "Mo Kit",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "mokit@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "mo123",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "Admin",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/addUser",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"addUser"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "unsuccessfully add user",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "name",
+													"value": "Mo Kit",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "mokit@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "mo123",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "Admin",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/addUser",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"addUser"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Vaccinations",
+					"item": [
+						{
+							"name": "Add Vaccination Status",
+							"item": [
+								{
+									"name": "successfully vaccination status",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "first_name",
+													"value": "Glenn",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "Chong",
+													"type": "text"
+												},
+												{
+													"key": "nric",
+													"value": "T0123456G",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "Jan 12, 2022",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "glennchong@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "travelhistory",
+													"value": "yes",
+													"type": "text"
+												},
+												{
+													"key": "vacstatus",
+													"value": "First Done",
+													"type": "text"
+												},
+												{
+													"key": "declaration",
+													"value": "the the the.efwefm efeewf ef ",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/addStatus/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"addStatus",
+												""
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "unsuccessfully vaccination status",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "first_name",
+													"value": "Glenn",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "Chong",
+													"type": "text"
+												},
+												{
+													"key": "nric",
+													"value": "T0123456G",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "Jan 12, 2022",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "glennchong@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "travelhistory",
+													"value": "yes",
+													"type": "text"
+												},
+												{
+													"key": "vacstatus",
+													"value": "First Done",
+													"type": "text"
+												},
+												{
+													"key": "declaration",
+													"value": "the the the.efwefm efeewf ef ",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/addStatus/",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"addStatus",
+												""
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "View Vaccination Status",
+							"item": [
+								{
+									"name": "successfully get vaccine status",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "View All Vaccination Status",
+							"item": [
+								{
+									"name": "successfully got All vaccine status",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Update Vaccination Status",
+							"item": [
+								{
+									"name": "successfully updated vaccine status",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "first_name",
+													"value": "Yu",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "Sheng",
+													"type": "text"
+												},
+												{
+													"key": "nric",
+													"value": "T023423G",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "Feb 20, 2022",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "yu sheng@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "travelhistory",
+													"value": "Yes",
+													"type": "text"
+												},
+												{
+													"key": "symptoms",
+													"value": "cough",
+													"type": "text"
+												},
+												{
+													"key": "vacstatus",
+													"value": "Fully Vaccinated",
+													"type": "text"
+												},
+												{
+													"key": "declaration",
+													"value": "hi",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/status/:id",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"status",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "62029e52527cd8ad0eb2c4f0"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "unsuccessfully updated vaccine status",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "first_name",
+													"value": "Yu",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "Sheng",
+													"type": "text"
+												},
+												{
+													"key": "nric",
+													"value": "T023423G",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "dob",
+													"value": "Feb 20, 2022",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "email",
+													"value": "yu sheng@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "travelhistory",
+													"value": "Yes",
+													"type": "text"
+												},
+												{
+													"key": "symptoms",
+													"value": "cough",
+													"type": "text"
+												},
+												{
+													"key": "vacstatus",
+													"value": "Fully Vaccinated",
+													"type": "text"
+												},
+												{
+													"key": "declaration",
+													"value": "hi",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/status/:id",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"status",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "234234232"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Appointments",
+					"item": [
+						{
+							"name": "View Appointment",
+							"item": [
+								{
+									"name": "successfully view booked appointment",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/appointment/:id",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"appointment",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "61e6758c0ffa7f21f7e8372a"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "View All Appointments",
+							"item": [
+								{
+									"name": "successfully view all booked appointment",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/appointments",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"appointments"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Update Appointment",
+							"item": [
+								{
+									"name": "successfully update appointment",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "MedicalConditionSymptoms",
+													"value": "saaa",
+													"type": "text"
+												},
+												{
+													"key": "first_name",
+													"value": "Rohit",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "Rohit",
+													"type": "text"
+												},
+												{
+													"key": "nric",
+													"value": "T0124422G",
+													"type": "text"
+												},
+												{
+													"key": "dob",
+													"value": "Feb 22, 2022",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "pandarohit05@mail.com",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/editBooking?id=61e6758c0ffa7f21f7e8372a",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"editBooking"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "61e6758c0ffa7f21f7e8372a"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Book Reservation",
+					"item": [
+						{
+							"name": "successfully added reservation",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Buy Medicine",
+					"item": [
+						{
+							"name": "successfully added purchase",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Glenn",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "glennchong@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "58443888",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2002-12-21",
+											"type": "text"
+										},
+										{
+											"key": "book_time",
+											"value": "12:00",
+											"type": "text"
+										},
+										{
+											"key": "items",
+											"value": "Eye Remedies",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/purchasemedicines",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"purchasemedicines"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nanyang Healthcare - Login/Signup</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/login.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form onsubmit="return register();">
+                <h1>Create Account</h1>                
+                <input type="text" id="name" name="name" placeholder="Name" required/>
+                <input type="email" id="email-register" name="email-register" placeholder="Email" required />
+                <input type="password" id="password-register" name="password-register" placeholder="Password" required />
+                <div class="error-message2"></div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form onsubmit="return login();">
+                <h1>Sign in</h1>                
+                <input type="email" id="email-login" name="email-login" placeholder="Email" required />
+                <input type="password" id="password-login" name="password-login" placeholder="Password" required />
+                <div class="error-message"></div>
+                <a href="#">Forgot your password?</a>                
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>                    
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/login.js"></script>
+
+  </body>
+</html>

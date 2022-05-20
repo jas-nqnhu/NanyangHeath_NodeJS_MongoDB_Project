@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "61fdf7c1e2e1653112e2fe89"
+  },
+  "first_name": "Rohit",
+  "last_name": "Panda",
+  "nric": "t013423A",
+  "dob": "Feb 20, 2022",
+  "email": "pandarohit05@gmail.com",
+  "travelhistory": "no",
+  "symptoms": [
+    [
+      "Cough",
+      "Fever",
+      "Body Ache"
+    ]
+  ],
+  "vacstatus": "Second Dose",
+  "declaration": "dvdv",
+  "createdAt": {
+    "$date": "2022-02-05T04:06:25.817Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-05T15:49:23.320Z"
+  },
+  "__v": 0
+}]

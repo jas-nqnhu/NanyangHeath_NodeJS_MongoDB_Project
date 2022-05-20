@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "61ed4ffa70d803836cdbfff7"
+  },
+  "name": "Admin1",
+  "email": "admin@nanyanghealth.com",
+  "password": "$2b$10$OVwlneE6Ga2sqL2pF9WzB.Wleb1m32BVFFz3f2G/a2.61uGLx3aFq",
+  "role": "Admin",
+  "createdAt": {
+    "$date": "2022-01-23T12:54:18.358Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-08T14:34:20.473Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ed55a4d4d7c4a23dcc819d"
+  },
+  "name": "Staff",
+  "email": "staff@nanyanghealth.com",
+  "password": "$2b$10$r0.pBs5zTu6muuFjvneeOuwmwoOuAB.nPgxTQPjhQO4DvZfFIfsSW",
+  "role": "Staff",
+  "createdAt": {
+    "$date": "2022-01-23T13:18:28.328Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-08T15:31:25.075Z"
+  },
+  "__v": 0,
+  "token": "ee52dacf12a3476a67c0e64d2c3b08dd"
+},{
+  "_id": {
+    "$oid": "61f4054db02c35577db060f5"
+  },
+  "name": "Sarah Doe",
+  "email": "user1@gmail.com",
+  "password": "$2b$10$SBXALbEZHFAlrOXPKqTzaeOc3L/AZ7kUyNzf8TbdOuX3IHTBqm5uu",
+  "role": "User",
+  "createdAt": {
+    "$date": "2022-01-28T15:01:33.502Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-07T16:46:13.046Z"
+  },
+  "__v": 0,
+  "token": "694c1e5fb96bce5bb975bfe7935dc7b4"
+},{
+  "_id": {
+    "$oid": "61f51eb400ce7815c7a65212"
+  },
+  "name": "John Doe",
+  "email": "user2@gmail.com",
+  "password": "$2b$10$qopk4uQrkTvuLDbOMaQv1usgDbYWHPsdwWAdWTcHEvYePgUCbBgsm",
+  "role": "User",
+  "createdAt": {
+    "$date": "2022-01-29T11:02:12.468Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-08T15:30:03.166Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62027f291261fba55824f320"
+  },
+  "name": "Joe Alwyn",
+  "email": "user3@gmail.com",
+  "password": "$2b$10$qopk4uQrkTvuLDbOMaQv1usgDbYWHPsdwWAdWTcHEvYePgUCbBgsm",
+  "role": "User",
+  "createdAt": {
+    "$date": "2022-01-29T11:02:12.468Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-08T15:29:16.628Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62028cbd7b27316f1404116f"
+  },
+  "name": "Taylor Swift",
+  "email": "user4@gmail.com",
+  "password": "$2b$10$jZkoaziGSb4aCvHeMF15s.spHVqgFtGCB9DoF86Vq4VerQXMDTL.q",
+  "role": "User",
+  "createdAt": {
+    "$date": "2022-02-08T15:31:09.193Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-08T15:31:09.193Z"
+  },
+  "__v": 0
+}]

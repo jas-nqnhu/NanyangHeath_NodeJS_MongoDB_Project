@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "61fec10de9947ef49d607bec"
+  },
+  "name": "Rohit Panda",
+  "email": "pandarohit05@gmail.com",
+  "phone": 84867599,
+  "date": "2022-02-23",
+  "book_time": "12:30am",
+  "items": [
+    "Eye Remedies",
+    "Cough & Remedies",
+    "Aches & Body Pain"
+  ],
+  "__v": 0
+}]

@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "61f6f89cf1405004232a74dc"
+  },
+  "dateTaken": "2022-01-11",
+  "imgPath": "uploads\\16435754527171327102.jpg1327102.jpg",
+  "result": "POSITIVE",
+  "user": {
+    "$oid": "61f6f89cf1405004232a74db"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f6f8b594aef7feddf02d04"
+  },
+  "dateTaken": "2022-01-11",
+  "imgPath": "uploads\\16435754770331327102.jpg1327102.jpg",
+  "result": "POSITIVE",
+  "user": {
+    "$oid": "61f6f8b594aef7feddf02d03"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f6f98494aef7feddf02d0b"
+  },
+  "dateTaken": "2022-01-11",
+  "imgPath": "uploads\\16435756844701327102.jpg1327102.jpg",
+  "result": "POSITIVE",
+  "user": {
+    "$oid": "61f6f98494aef7feddf02d0a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f6f99a571a24b512a1090b"
+  },
+  "dateTaken": "2022-01-20",
+  "imgPath": "uploads\\16435757062001327102.jpg1327102.jpg",
+  "result": "POSITIVE",
+  "user": {
+    "$oid": "61f6f99a571a24b512a1090a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fb46827cc763d1e17c95e8"
+  },
+  "dateTaken": "2022-02-10",
+  "imgPath": "uploads\\1643857538463111.png111.png",
+  "result": "NEGATIVE",
+  "user": {
+    "$oid": "61fb46827cc763d1e17c95e7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fb47907cc763d1e17c95ed"
+  },
+  "dateTaken": "2022-02-15",
+  "imgPath": "uploads\\164385780877131e090022f61d9fb5f2ccbdae648fbac.jpg31e090022f61d9fb5f2ccbdae648fbac.jpg",
+  "result": "NEGATIVE",
+  "user": {
+    "$oid": "61fb47907cc763d1e17c95ec"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fe9a01dc3b2df50489253b"
+  },
+  "dateTaken": "Feb 09, 2022",
+  "imgPath": "uploads\\1644075521685hzart021021.jpghzart021021.jpg",
+  "result": "NEGATIVE",
+  "user": {
+    "$oid": "61fe9a01dc3b2df50489253a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fe9cafb8aa8c425412e431"
+  },
+  "dateTaken": "Feb 10, 2022",
+  "imgPath": "uploads\\1644076207854111.png111.png",
+  "result": "POSITIVE",
+  "user": {
+    "$oid": "61fe9cafb8aa8c425412e430"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62027976497b44baedba3e66"
+  },
+  "imgPath": "uploads\\1644329334467hzart021021.jpghzart021021.jpg",
+  "user": {
+    "$oid": "62027976497b44baedba3e65"
+  },
+  "__v": 0
+}]

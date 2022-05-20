@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "61feb8c23ce2932ce54b9b87"
+  },
+  "firstname": "Brenda",
+  "lastname": "Tan",
+  "address": "180 Ang Mo Kio Ave 8, Singapore 569830",
+  "birthday": "Feb 13, 1986",
+  "maritialStat": "Married",
+  "cellphone": 88788168,
+  "email": "brendatan22@gmail.com",
+  "title": "Senior Nurse",
+  "employeeId": "194506L",
+  "startDate": "Feb 21, 2022",
+  "deparment": "Nursing",
+  "workLoc": "Tower A",
+  "salary": 5000,
+  "supervisor": "Elizabeth SIM",
+  "efirstname": "Wei Zhong",
+  "elastname": "Ong",
+  "eaddress": "180 Ang Mo Kio Ave 8, Singapore 569830",
+  "ecellphone": 97873011,
+  "Relationship": "Husband",
+  "createdAt": {
+    "$date": "2022-02-05T17:49:54.472Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-07T17:53:05.668Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62015af8af4885a843c41ed8"
+  },
+  "firstname": "Nicole",
+  "lastname": "Low",
+  "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+  "birthday": "Oct 22, 1998",
+  "maritialStat": "Single",
+  "cellphone": 93432234,
+  "email": "nicolelow@gmail.com",
+  "title": "Junior Nurse",
+  "employeeId": "123002X",
+  "startDate": "Feb 01, 2022",
+  "deparment": "Nursing ",
+  "workLoc": "Tower A Level 1",
+  "salary": 3000,
+  "supervisor": "Elizabeth SIM",
+  "efirstname": "Benjamin",
+  "elastname": "Low",
+  "eaddress": "21 Lower Kent Ridge Rd, Singapore 119077",
+  "ecellphone": 87542621,
+  "Relationship": "Father",
+  "createdAt": {
+    "$date": "2022-02-07T17:46:32.607Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-07T17:46:32.607Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Purchase Medicines</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/css2/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/css2/animate.css">
+
+  <link rel="stylesheet" href="css/css2/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/css2/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/css2/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/css2/aos.css">
+
+  <link rel="stylesheet" href="css/css2/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/css2/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/css2/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/css2/flaticon.css">
+  <link rel="stylesheet" href="css/css2/icomoon.css">
+  <link rel="stylesheet" href="css/css2/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-light-2"
+    id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="/store">Nanyang Health & Foods</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-solid fa-bars"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="/" class="nav-link">Back To Hospital</a></li>
+          <li class="nav-item"><a href="/store" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/pharmacy" class="nav-link">Pharmacy</a></li>
+          <li class="nav-item"><a href="/menu" class="nav-link">Specialties</a></li>
+          <li class="nav-item"><a href="/reservation" class="nav-link">Reservation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-9 ftco-animate text-center">
+          <h1 class="mb-2 bread">Purchase Medicines</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="/store">Home <i
+                  class="fa fa-light fa-forward"></i></a></span><span class="mr-2"><a href="/pharmacy">Pharmacy<i
+                  class="fa fa-light fa-forward"></i></a></span> <span>Purchase Medicines</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-md-20 ftco-animate makereservation p-4 p-md-5">
+          <div class="heading-section ftco-animate mb-5">
+            <span class="subheading">Shop</span>
+          </div>
+          <form action="/purchasemedicines" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input name="name" id="name" type="text" class="form-control" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input name="email" id="email" type="text" class="form-control" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input name="phone" id="phone" type="text" class="form-control" placeholder="Phone">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="date">Collection Date</label>
+                  <input name="date" type="date" class="form-control" id="date" placeholder="Date">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="book_time">Collections Time</label>
+                  <input name="book_time" type="text" class="form-control" id="book_time" placeholder="Collection Time">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="items">Select Catagories Of Purchase:</label>
+                  <label>
+                    <input type="checkbox" class="filled-in" name="items" id="items" value="Allergy" />
+                    <span>Allergies</span>
+                  </label><br><br>
+                  <label>
+                    <input type="checkbox" class="filled-in" name="items" id="items" value="Eye Remedies" />
+                    <span>Eye Remedies</span>
+                  </label><br><br>
+                  <label>
+                    <input type="checkbox" class="filled-in" name="items" id="items" value="Cough & Remedies" />
+                    <span>Cough &amp; Remedies</span>
+                  </label><br><br>
+                  <label>
+                    <input type="checkbox" class="filled-in" name="items" id="items" value="Aches & Body Pain" />
+                    <span>Aches &amp; Body Pain</span>
+                  </label><br><br>
+                  <label>
+                    <input type="checkbox" class="filled-in" name="items" id="items" value="Gastro-Intestinal" />
+                    <span>Gastro-Intestinal</span>
+                  </label><br><br>
+                </div>
+              </div>
+              <div class="col-md-12 mt-3">
+                <div class="form-group">
+                  <input type="submit" value="Checkout" name="purchasemedicines" class="btn btn-primary py-3 px-5">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Nanyang Health &amp; Foods</h2>
+            <p>Please call our staffs at 1800 1111 4321 to refund your Purchase.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Open Hours</h2>
+            <ul class="list-unstyled open-hours">
+              <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+              <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+              <li class="d-flex"><span>Sunday</span><span> Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Instagram</h2>
+            <div class="thumb d-sm-flex">
+              <a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);">
+              </a>
+              <a href="#" class="thumb-menu img" style="background-image: url(images/insta-2.jpg);">
+              </a>
+              <a href="#" class="thumb-menu img" style="background-image: url(images/insta-3.jpg);">
+              </a>
+            </div>
+            <div class="thumb d-flex">
+              <a href="#" class="thumb-menu img" style="background-image: url(images/insta-4.jpg);">
+              </a>
+              <a href="#" class="thumb-menu img" style="background-image: url(images/insta-5.jpg);">
+              </a>
+              <a href="#" class="thumb-menu img" style="background-image: url(images/insta-6.jpg);">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/reservation.js"></script>
+
+</body>
+
+</html>

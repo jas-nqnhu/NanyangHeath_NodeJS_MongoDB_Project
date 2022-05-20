@@ -1,0 +1,789 @@
+{
+	"info": {
+		"_postman_id": "51ae5fb6-a294-4cfa-9ffe-b2c03357c92c",
+		"name": "WAD Project_Jasmine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add record didn't sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/addRecord",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"addRecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add record not staff or admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/addRecord?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"addRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add record invalid token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/addRecord?token=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"addRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add record staff or admin token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/addRecord?token=7d326e808822699848cd2c980507f04f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"addRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "7d326e808822699848cd2c980507f04f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete record didn't sign",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/deleteRecord/62026459cd7d7493dc43d91d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"deleteRecord",
+						"62026459cd7d7493dc43d91d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete record invalid token",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/deleteRecord/62026459cd7d7493dc43d91d?token=111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"deleteRecord",
+						"62026459cd7d7493dc43d91d"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "111"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete record user acc",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/deleteRecord/62026459cd7d7493dc43d91d?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"deleteRecord",
+						"62026459cd7d7493dc43d91d"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete record admin staff no record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/deleteRecord/620266b4cd7d7493dc43d929?token=7d326e808822699848cd2c980507f04f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"deleteRecord",
+						"620266b4cd7d7493dc43d929"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "7d326e808822699848cd2c980507f04f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete record admin staff record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "PersonalInfo",
+							"value": "{    firstname: data.firstname,\n      lastname: data.lastname,\n      address: data.address,\n      birthday: data.dob,\n      maritialStat: data.mStatus,\n      cellphone: data.cellphone,\n      email: data.email,\n    }",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "61ed4ffa70d803836cdbfff7",
+							"type": "text"
+						},
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/1327102.jpg"
+						},
+						{
+							"key": "result",
+							"value": "NEGATIVE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/deleteRecord/620266b4cd7d7493dc43d929?token=7d326e808822699848cd2c980507f04f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"deleteRecord",
+						"620266b4cd7d7493dc43d929"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "7d326e808822699848cd2c980507f04f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit record no token",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/editRecord",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"editRecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit record invalid token",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/editRecord?token=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"editRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit record valid token forbiden",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/editRecord?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"editRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit record valid token admin staff no record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/editRecord?token=7d326e808822699848cd2c980507f04f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"editRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "7d326e808822699848cd2c980507f04f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit record valid token admin staff valid record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/treatmentRecord/editRecord?token=7d326e808822699848cd2c980507f04f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"treatmentRecord",
+						"editRecord"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "7d326e808822699848cd2c980507f04f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api get all record no token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api get all record invalid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/records?token=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"records"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api get all record valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/records?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"records"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api get all user invalid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users?token=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api get all user valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/records?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"records"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add ART",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/hzart021021.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/ART?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ART"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "invalid",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add ART Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imgPath",
+							"type": "file",
+							"src": "/C:/Users/nqnhu/Pictures/hzart021021.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/ART?token=694c1e5fb96bce5bb975bfe7935dc7b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ART"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "invalid",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "694c1e5fb96bce5bb975bfe7935dc7b4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

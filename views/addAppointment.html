@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <header>
+        <title>Nanyang Healthcare - Book An Appointment</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+        <title>Nanyang Healthcare - Book An Appointment</title>
+
+    </header>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="icon" href="https://i.ibb.co/jfxPtYP/Logo-06-600-x-600-px.png">
+</head>
+
+<body>
+<!--------------- Dropdown Content  ------------------------>
+  <ul id="dropdown1" class="dropdown-content">    
+
+</ul>
+<!--------------- Navigation bar  ------------------------>
+<nav class="light-blue lighten-1 navBar" role="navigation">    
+       
+</nav>
+<!--------------- Page Content  ------------------------>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Appointment Form</h1>
+            <section>
+                <form action="/addAppointment" method="POST">
+                    <!-- Text field for medical and symptoms -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea name="MedicalConditionSymptoms" id="MedicalConditionSymptoms"
+                                class="materialize-textarea" data-length="200" required></textarea>
+                            <label for="MedicalConditionSymptoms">Please provide a brief description of your medical
+                                condition or symptoms.</label>
+                        </div>
+                    </div>
+
+                    <h3 class="header center orange-text">Patient's Particulars</h3>
+
+                    <!-- First Name and Last Name -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input name="first_name" id="first_name" type="text" class="validate" required>
+                            <label for="first_name">First Name</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input name="last_name" id="last_name" type="text" class="validate" required>
+                            <label for="last_name">Last Name</label>
+                        </div>
+
+                        <!-- NRIC & DOB -->
+                        <div class="input-field col s6">
+                            <input name="nric" id="nric" type="text" class="validate" required>
+                            <label for="nric">NRIC</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input name="dob" type="text" id="dob" class="datepicker" required>
+                            <label for="dob">Date Of Birth</label>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input name="email" id="email" type="email" class="validate" required>
+                                <label for="email">Email</label>
+                                <span class="helper-text" data-error="wrong" data-success="right"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <button class="btn waves-effect waves-light" type="submit" value="Add Booking"
+                            name="addBooking">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
+        </div>
+        </section>
+    </div>
+    </div>
+    </div>
+
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">This website aims to make it better and easier for multiple
+                        users dealing with the Covid-19. This web application aims to reduce social gathering and
+                        physical contact by making it through online process.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="https://pandarohit05.wixsite.com/website"
+                    target="_blank">Rohit</a> and Jasmine
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <header>
+    <title>Nanyang Healthcare - Staff Record</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Nanyang Healthcare - Staff Record</title>
+
+  </header>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="icon" href="https://i.ibb.co/jfxPtYP/Logo-06-600-x-600-px.png">
+</head>
+
+<body>
+<!--------------- Dropdown Content  ------------------------>
+<ul id="dropdown1" class="dropdown-content">    
+
+</ul>
+<!--------------- Navigation bar  ------------------------>
+<nav class="light-blue lighten-1 navBar" role="navigation">    
+       
+</nav>
+<!--------------- Page Content  ------------------------>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Staff Record</h1>
+      <div class="row">
+        <form onsubmit="return addStaffRecord();">
+          <h3 class="header center orange-text">Personal Information:</h3>
+          <!-- First Name and Last Name -->
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="first_name" id="first_name" type="text" class="validate" required>
+              <label for="first_name">First Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="last_name" id="last_name" type="text" class="validate" required>
+              <label for="last_name">Last Name</label>
+            </div>
+
+            <!-- Address & DOB -->
+            <div class="input-field col s6">
+              <input name="address" id="address" type="text" class="validate" required>
+              <label for="address">Address</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="dob" type="text" id="dob" class="datepicker" required>
+              <label for="dob">Date Of Birth</label>
+            </div>
+            <!-- Maritial Status & Cellphone -->
+            <div class="input-field col s6">
+              <input name="mStatus" id="mStatus" type="text" class="validate" required>
+              <label for="mStatus">Maritial Status</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="cellphone" type="number" id="cellphone" required>
+              <label for="cellphone">Cell Phone</label>
+            </div>
+
+            <!-- Email -->
+            <div class="row">
+              <div class="input-field col s12">
+                <input name="email" id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="wrong" data-success="right"></span>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="header center orange-text">Job Information</h3>
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="jobtitle" id="jobtitle" type="text" class="validate" required>
+              <label for="jobtitle">Title</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="empId" id="empId" type="text" class="validate" required>
+              <label for="empId">Employee ID</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="startdate" type="text" id="startdate" class="datepicker" required>
+              <label for="startdate">Start Date</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="department" id="department" type="text" class="validate" required>
+              <label for="department">Department</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="workloc" id="workloc" type="text" class="validate" required>
+              <label for="workloc">Work Location</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="Salary" id="Salary" type="number" class="validate" required>
+              <label for="Salary">Salary</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="supervisor" id="supervisor" type="text" class="validate" required>
+              <label for="supervisor">Supervisor</label>
+            </div>
+          </div> <h3 class="header center orange-text">Emergency Contact Information</h3>  
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="e_first_name" id="e_first_name" type="text" class="validate" required>
+              <label for="e_first_name">First Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="e_last_name" id="e_last_name" type="text" class="validate" required>
+              <label for="e_last_name">Last Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input name="e_address" id="e_address" type="text" class="validate" required>
+              <label for="e_address">Address</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="e_cellphone" type="number" id="e_cellphone" required>
+              <label for="e_cellphone">Cell Phone</label>
+            </div>
+            <label for="rela">Relationship</label>
+            <select  class="browser-default" name="rela" id="rela">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="Husband">Husband</option>
+              <option value="Wife">Wife</option>
+              <option value="Mother">Mother</option>
+              <option value="Father">Father</option>
+              <option value="Brother">Brother</option>
+              <option value="Sister">Sister</option>
+              <option value="Others">Others</option>
+            </select><br>
+          </div>       
+          <div class="row center">
+            <input type="submit" value="Add Record"><br><br>
+          </div>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">This website aims to make it better and easier for multiple users dealing
+            with the Covid-19. This web application aims to reduce social gathering and physical contact by making it
+            through online process.</p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="https://pandarohit05.wixsite.com/website"
+          target="_blank">Rohit</a> and Jasmine
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/js/materialize.js"></script>
+  <script src="/js/init.js"></script>
+  <script src="/js/addStaffRecord.js"></script>
+
+</body>
+
+</html>

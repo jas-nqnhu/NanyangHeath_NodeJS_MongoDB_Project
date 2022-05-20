@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "61f18650c7c030e9bc9a4c85"
+  },
+  "patientName": "John Doe",
+  "patientPhone": "63728293",
+  "address": "217 #25-617 Yio Chu Kang",
+  "birthday": "Feb 09, 2022",
+  "height": 1.8,
+  "weight": 68,
+  "bloodtype": "B",
+  "medicalHistory": [
+    "Asthma",
+    "Heart Issues"
+  ],
+  "otherHealthIssue": "Back Pain",
+  "user": {
+    "$oid": "61f51eb400ce7815c7a65212"
+  },
+  "createdAt": {
+    "$date": "2022-01-26T17:35:12.075Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-04T15:20:55.876Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fd435e20c1e0347f1e2e43"
+  },
+  "patientName": "Sarah Doe",
+  "patientPhone": "64364643",
+  "address": "217 #25-617",
+  "birthday": "Jan 11, 2022",
+  "height": 1.98,
+  "weight": 44,
+  "bloodtype": "A",
+  "medicalHistory": [
+    "Asthma",
+    "Heart Issues"
+  ],
+  "otherHealthIssue": "N/a",
+  "user": {
+    "$oid": "61f4054db02c35577db060f5"
+  },
+  "createdAt": {
+    "$date": "2022-02-04T15:16:46.984Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-05T15:59:28.838Z"
+  },
+  "__v": 0
+}]
